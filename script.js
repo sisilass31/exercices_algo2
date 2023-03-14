@@ -53,8 +53,6 @@ function add(number){
     number = parseInt(prompt('Entrez un nombre'));
     let i = 0;
     while( i <= 10){
-        i++;
-        number++;
         console.log(number);
     }
 }
@@ -162,10 +160,26 @@ A la naissance de Marie, son grand-père Nestor, lui ouvre un compte bancaire. E
 son compte 100e, auxquels il ajoute le double de l’âge de Marie. Par exemple, lorsqu’elle a deux ans, il lui verse 104e. Écrire un algorithme
 qui permette de déterminer quelle somme aura Marie lors de son n-ième anniversaire.
 
+//fonction qui détermine la valeur que Marie aura lors de son anniversaire:
+
 function marie(age){
     age = parseInt(prompt('Quel est l\'âge de Marie?'));
     let result = 100 + (2 * age);
     console.log(result);
     alert('À ' + age + ' ans, Marie recevra ' + result + '€')
 }
+marie()
+
+
+//fonction qui détermine la valeur du compte de Marie lors de son n-ième anniversaire.:
+function marie(age){
+    age = parseInt(prompt('Quel est l\'âge de Marie?'));
+    let sum = 0;
+    for( let i = 1; i <= age; i++){
+        sum = sum + 100 + (2 * i);
+    }
+    console.log(sum);
+    alert('À ' + age + ' ans, Marie recevra ' + sum + '€')
+}
 marie()*/
+
