@@ -52,7 +52,9 @@ l'utilisateur entre le nombre 17, le programme affichera les nombres de 18 à 27
 function add(number){
     number = parseInt(prompt('Entrez un nombre'));
     let i = 0;
-    while( i <= 10){
+    while(i <= 10){
+        i++;
+        number++;
         console.log(number);
     }
 }
@@ -182,4 +184,3 @@ function marie(age){
     alert('À ' + age + ' ans, Marie recevra ' + sum + '€')
 }
 marie()*/
-
